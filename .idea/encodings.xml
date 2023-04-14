@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/Colection" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/JC" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/JC/Lesson/lesson3.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/JC2" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/Java1" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/Lymbda" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/OOP" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/OOP/Hw/Hw5Discriminant/Hw5.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/OOP2" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/ObolochcaHw" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/Practical" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/Project1" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/SOLID" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/StreamAPI" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/String" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/ВводВывод" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/Исключения" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/Многопоточность" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/Обопщение" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/Файлы" charset="windows-1251" />
+  </component>
+</project>
