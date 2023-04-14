@@ -1,7 +1,7 @@
 package JC.Lesson;
 
 import java.util.Scanner;
-// Определить какое из 3х чисел четное и вывести на экран какое
+// РћРїСЂРµРґРµР»РёС‚СЊ РєР°РєРѕРµ РёР· 3С… С‡РёСЃРµР» С‡РµС‚РЅРѕРµ Рё РІС‹РІРµСЃС‚Рё РЅР° СЌРєСЂР°РЅ РєР°РєРѕРµ
 public class lesson1  {
     public static void main(String[] args) {
         int a, b, c;
