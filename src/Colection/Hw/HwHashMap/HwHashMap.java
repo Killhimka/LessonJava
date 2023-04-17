@@ -2,30 +2,37 @@ package Colection.Hw.HwHashMap;
 
 import java.util.*;
 
-public class HwHashMap {
-    public static void main(String[] args) {
-        HashMap<Integer, String[]> hm = new HashMap<>();
+public class Main {
+    static class Product{
+        int cena;
+        String name;
 
-        String[] prays10 = new String[]{"Молоко Кефир Свекла Морковь"};
-        String[] prays20 = new String[]{"Хлеб Бананы"};
-        String[] prays30 = new String[]{"Батон Багет Тоты Лаваш"};
-        String[] prays40 = new String[]{"Сметана"};
-        String[] prays50 = new String[]{"Кефир Ряженка Майонез Сироп"};
-
-        hm.put(10, prays10);
-        hm.put(20, prays20);
-        hm.put(30, prays30);
-        hm.put(40, prays40);
-        hm.put(50, prays50);
-
-
-        for (Map.Entry<Integer,String[]>entry: hm.entrySet()) {
-            int a = entry.getKey();
-            System.out.println("----------------------");
-            System.out.println("Весь товар стоимостью: "+a);
-            for (String s1: entry.getValue()){
-                System.out.println(s1);
-            }
+        public Product(int cena, String name) {
+            this.cena = cena;
+            this.name = name;
         }
+
+        @Override
+        public String toString() {
+            return "Product{" +
+                    "cena=" + cena +
+                    ", name=" + name +
+                    '}';
+        }
+    }
+    public static void main(String[] args) {
+        HashMap<Integer,String> hm = new HashMap<>();
+        hm.put(10,"Молоко Майонез Хлеб");
+        hm.put(5,"Сок Кефир");
+        hm.put(15,"Сметана Колбаса Грибы");
+        Product product = new Product(10,"Бананы");
+        if (hm.containsKey(product.cena)){
+            hm.put(product.cena, hm.get(product.cena).concat(" "+product.name));
+            String[] sort = hm.get(product.cena).split(" ");
+            Arrays.sort(sort);
+            hm.put(product.cena,Arrays.toString(sort));
+        }   else hm.put(product.cena, product.name);
+
+        System.out.println(hm);
     }
 }
