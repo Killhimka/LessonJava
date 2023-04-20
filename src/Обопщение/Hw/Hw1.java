@@ -10,11 +10,10 @@ public class Hw1{
 class Hw2<T,V>{
     private T ob1;
     private V ob2;
-    public Hw2 (T ob1,V ob2){
-        if (ob1.equals(ob2)){
-            System.out.println("Yes");
-        } else System.out.println("no");
-    }
+        public Hw2 (T ob1, V ob2){
+            System.out.println(ob1.getClass().equals(ob2.getClass()));
+        }
+
 
 
 }
