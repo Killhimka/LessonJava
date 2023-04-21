@@ -20,12 +20,12 @@ public class Animal {
 
     public static void main(String[] args) {
         ClassAnimal classAnimal = new ClassAnimal<>();
-        classAnimal.animal(new Cet());
+        classAnimal.animal(new Dog());
     }
 }
 class ClassAnimal <T> extends Animal{
     public <T> void animal(T ob) {
-        Cat cat = new Cat();
-        System.out.println(cat.nameAnimal+" "+cat.colorAnimal);
+        System.out.println(((Dog)ob).nameAnimal);
+        System.out.println(((Dog)ob).colorAnimal);
     }
 }
