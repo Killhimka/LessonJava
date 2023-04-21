@@ -19,12 +19,13 @@ public class Animal {
     private String colorAnimal;
 
     public static void main(String[] args) {
-        ClassAnimal classAnimal = new ClassAnimal<>(new Dog());
+        ClassAnimal classAnimal = new ClassAnimal<>();
+        classAnimal.animal(new Cet());
     }
 }
 class ClassAnimal <T> extends Animal{
     T ob;
-    public ClassAnimal(T ob) {
-        this.ob = ob;
+    public void animal(Cet ob) {
+        System.out.println(ob.nameAnimal+" "+ob.colorAnimal);
     }
 }
