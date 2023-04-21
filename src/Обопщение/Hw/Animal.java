@@ -24,8 +24,8 @@ public class Animal {
     }
 }
 class ClassAnimal <T> extends Animal{
-    T ob;
-    public void animal(Cet ob) {
-        System.out.println(ob.nameAnimal+" "+ob.colorAnimal);
+    public <T> void animal(T ob) {
+        Cat cat = new Cat();
+        System.out.println(cat.nameAnimal+" "+cat.colorAnimal);
     }
 }
