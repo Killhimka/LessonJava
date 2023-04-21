@@ -1,9 +1,9 @@
 package Обобщения;
 
 class Dog extends Animal{
-    public Dog (){
-        this.nameAnimal = "Dog";
-        this.colorAnimal = "Blue";
+    public Dog (String nameAnimal,String colorAnimal){
+        this.nameAnimal = nameAnimal;
+        this.colorAnimal = colorAnimal;
     }
 }
 class Cat extends Animal {
@@ -15,14 +15,23 @@ class Cat extends Animal {
 public class Animal {
     String nameAnimal;
     String colorAnimal;
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "nameAnimal='" + nameAnimal + '\'' +
+                ", colorAnimal='" + colorAnimal + '\'' +
+                '}';
+    }
     public static void main(String[] args) {
         ClassAnimal classAnimal = new ClassAnimal();
-        classAnimal.animal(new Dog());
+        classAnimal.animal(new Dog("Dog","Red"));
+        classAnimal.animal(new Cat());
     }
 }
 class ClassAnimal extends Animal{
     public  <T> void animal(T ob) {
-        System.out.println(((Animal)ob).colorAnimal);
-        System.out.println(((Animal)ob).nameAnimal);
+        System.out.println(ob);
+        System.out.println(ob);
     }
 }
